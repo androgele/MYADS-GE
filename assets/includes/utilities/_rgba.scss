@@ -1,0 +1,3 @@
+@each $color, $value in $rgba-colors {
+  @include rgba-bg-variant(".rgba-#{$color}", $value);
+}

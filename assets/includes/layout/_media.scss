@@ -1,0 +1,25 @@
+@each $breakpoint in map-keys($grid-breakpoints-rev) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints-rev);
+    .bg#{$infix}-none {
+      background: none !important;
+    }
+    .border#{$infix}-none {
+      border: none !important;
+    }
+    .border-radius#{$infix}-none {
+      border-radius: 0 !important;
+    }
+  }
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .border-radius-rev#{$infix}-none {
+      border-radius: 0 !important;
+    }
+    .border-rev#{$infix}-none {
+      border: none !important;
+    }
+  }
+}

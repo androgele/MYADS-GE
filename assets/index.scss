@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "includes/abstracts/variables";
+
+@import 'includes/base/reset';
+/*BOOTSTRAP*/
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+//@import "bootstrap/alert";
+@import "bootstrap/custom-forms";
+@import "bootstrap/images";
+@import "bootstrap/grid";
+@import "bootstrap/forms";
+//@import "bootstrap/buttons";
+@import "bootstrap/dropdown";
+//@import "bootstrap/nav";
+//@import "bootstrap/navbar";
+
+//@import "bootstrap/transitions";
+//@import "bootstrap/close";
+//@import "bootstrap/list-group";
+@import "bootstrap/modal";
+//@import "bootstrap/tables";
+//@import "bootstrap/pagination";
+@import "bootstrap/tooltip";
+
+@import "bootstrap/utilities/align";
+@import "bootstrap/utilities/background";
+@import "bootstrap/utilities/borders";
+//@import "bootstrap/utilities/clearfix";
+@import "bootstrap/utilities/display";
+@import "bootstrap/utilities/embed";
+@import "bootstrap/utilities/flex";
+//@import "bootstrap/utilities/float";
+@import "bootstrap/utilities/overflow";
+//@import "bootstrap/utilities/position";
+//@import "bootstrap/utilities/screenreaders";
+@import "bootstrap/utilities/shadows";
+//@import "bootstrap/utilities/sizing";
+@import "bootstrap/utilities/stretched-link";
+@import "bootstrap/utilities/spacing";
+@import "bootstrap/utilities/text";
+@import "bootstrap/utilities/visibility";
+//@import "animate/animate";
+
+@import "includes/main";

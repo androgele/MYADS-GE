@@ -1,0 +1,17 @@
+/*Wide container*/
+.wide-container {
+  width: 100%;
+  margin:0 auto;
+  padding: 0 15px;
+  @include make-wide-container-max-widths();
+}
+/*Small container*/
+.small-container {
+  width: 100%;
+  margin:0 auto;
+  padding: 0 15px;
+  @include make-small-container-max-widths();
+}
+.content-mh {
+  @include make-content-min-height();
+}

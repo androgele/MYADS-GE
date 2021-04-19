@@ -1,0 +1,150 @@
+.custom-calendar {
+  .fc-toolbar-chunk {
+    display: flex;
+    align-items: center;
+  }
+
+  .fc-datagrid-cell-cushion, .fc-datagrid-cell-main {
+    display: flex;
+
+    img {
+      width: 37px;
+      height: 32px;
+    }
+  }
+
+  .fc-datagrid-expander {
+    display: none;
+  }
+
+  .fc-resource[data-resource-id] {
+    .fc-icon, .fc-datagrid-expander {
+      display: none;
+    }
+  }
+
+  .fc-event-pending {
+
+  }
+
+  .fc-event-confirmed {
+
+  }
+
+  .fc-event-canceled {
+
+  }
+
+  .fc-event-blocked {
+
+  }
+
+  /*reset*/
+  .fc-theme-standard td, .fc-theme-standard th {
+    border: 1px solid $gray-200 !important;
+  }
+
+  .fc-timeline-header {
+    td, th {
+      border: 0 !important;
+    }
+
+    th {
+      //width: 54px;
+      height: 44px;
+    }
+  }
+
+  .fc-datagrid-header {
+    display: none;
+  }
+
+  .fc-resource-timeline-divider {
+    background-color: $gray-200 !important;
+  }
+
+  .fc .fc-resource-timeline .fc-resource-group:not([rowspan]) {
+    background: $gray-200 !important;
+  }
+
+  .fc-scrollgrid.fc-scrollgrid-liquid {
+    border: 0 !important;
+  }
+
+  .fc-event-main {
+    color: inherit !important;
+  }
+
+  /*selected periods*/
+  .fc-period-block {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .fc-blocked {
+    background: repeating-linear-gradient(
+                    -45deg,
+                    $gray-300,
+                    $gray-300 10px,
+                    $gray-200 10px,
+                    $gray-200 20px
+    );
+  }
+
+  .fc-confirmed {
+    &::after {
+      background-image: url('../../../img/icons/checked.svg');
+    }
+  }
+
+  .fc-pending {
+    &::after {
+      background-image: url('../../../img/icons/time.svg');
+    }
+  }
+
+  /**/
+  .key-icon {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.key-green {
+      background-image: url('../../../img/icons/key_green.svg');
+    }
+
+    &.key-yellow {
+      background-image: url('../../../img/icons/key_yellow.svg');
+    }
+  }
+
+  /**/
+  .fc-timeline-slot-cushion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 !important;
+  }
+
+  .fc-timeline-header, .fc-timeline-body {
+    td, th {
+      //width: 44px;
+    }
+  }
+}

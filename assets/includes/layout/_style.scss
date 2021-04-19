@@ -1,0 +1,20 @@
+.container{
+    min-width:1170px;
+    max-width:1170px;
+  }
+  a{
+    text-decoration: unset;
+    &:hover{
+      text-decoration: unset;
+    }
+  }
+  .instagram::after, .facebook::after {
+    content: "•";
+    padding: 0 10px;
+    font-size:10px;
+  }
+  .my-footer::after{
+    content: "•";
+    padding: 0 10px;
+    font-size:10px;
+  }

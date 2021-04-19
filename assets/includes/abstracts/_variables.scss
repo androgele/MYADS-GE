@@ -1,0 +1,413 @@
+$gray-900: #272a37;
+$gray-800: #181a26;
+$gray-700: #454857;
+$gray-500: #d9dfee;
+$gray-400: #a4aec1;
+$gray-300: #e4e7ed;
+$gray-200: #f1f3f6;
+$gray-100: #f8f9fc;
+$gray-0: #dadada;
+$gray: #ababaf;
+//
+$green: #0d9933;
+$green-800: #29b24e;
+$green-700: #92d9a4;
+$green-600: #a7e1b7;
+$green-200: #bfe9cb;
+$green-100: #e9f7ed;
+$green-info: #f6fffa;
+$yellow: #f7b200;
+$yellow-100: #fce7b2;
+$yellow-light: #f4ec3b;
+$blue: #2f7fff;
+$visa-blue: #10357f;
+$pink: #ff4c62;
+$pink-800: #ffa5b0;
+$pink-200: #ffced0;
+$pink-100: #ffdbe0;
+$red: #fd381c;
+$white: #ffffff;
+$brown: #A95B27;
+$orange: #ff8600;
+$disabled: #929294;
+$bg: #f0f3f6;
+$brown-200: #6C615A;
+$black: #000000;
+$black-95 : rgba(30, 33, 35, 0.95);
+$white-01 : rgba(255,255,255,0.1);
+//$bg: #f1f3f6;
+$light-gray: $gray-100;
+$dark-gray: $gray-800;
+
+$primary:       $green;
+$secondary:     $blue;
+$success:       $green;
+$info:          $pink;
+$danger:        $red;
+$light:         $gray-400;
+$dark:          $gray-800;
+$transparent:          transparent;
+/*theme-colors Merge Or overrides*/
+$theme-colors: () !default;
+/*add in map all color you need*/
+$theme-colors: map-merge(
+    (
+        'body': $bg,
+        'green-800': $green-800,
+        'gray-100' : $gray-100,
+        'gray-200' : $gray-200,
+        'gray-500' : $gray-500,
+        'gray-800' : $gray-800,
+        'gray-900' : $gray-900,
+        'black'    : $black,
+        'black-95' : $black-95,
+        //...
+    ),
+    $theme-colors
+);
+
+/*RGBA backgrounds*/
+//rgba
+$rgba-white-50: rgba($white,0.5);
+
+$rgba-colors: () !default;
+/*add rgba colors in map*/
+$rgba-colors: map-merge(
+    (
+        'white-50':      $rgba-white-50,
+      //...
+    ),
+    $rgba-colors
+);
+/*linear-gradient*/
+/*add gradients in map*/
+$gradient-colors: () !default;
+$gradient-colors: map-merge(
+    (
+
+      //...
+    ),
+    $gradient-colors
+);
+
+
+$body-bg:    $bg;
+$body-color: $gray-800;
+
+$link-color:                              $green-800;
+$link-decoration:                         none;
+//$link-hover-color:                        darken($link-color, 0%);
+$link-hover-decoration:                   underline;
+$hover-box-shadow: 0 6px 16px 0 rgba(38, 63, 111, 0.08);
+$hover-box-shadow-light: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+$hover-box-shadow-big: 0 8px 16px 0 rgba(93, 98, 107, 0.24);
+
+
+$yiq-text-dark:             $gray-800;
+$yiq-text-light:            $gray-400;
+/*opacity*/
+$opacity-50: 0.5;
+$opacity: () !default;
+$opacity: map-merge(
+  (
+      '50':  $opacity-50,
+    //...
+  ),
+  $opacity
+);
+$sizes: () !default;
+/*spacer*/
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+      0:    0,
+      '4px':    4px,
+      '6px':    6px,
+      '8px':    8px,
+      '10px':    10px,
+      '15px':    15px,
+      '20px':    20px,
+      '25px':    25px,
+      '30px':    30px,
+      '35px':    35px,
+      '40px':    40px,
+      '60px':    60px,
+      '100px':    100px,
+    //...
+  ),
+  $spacers
+);
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+/*sizes in % see more in _dimensions.scss*/
+$sizes: map-merge(
+  (     
+        10: 10%,
+        auto: auto,
+        //...
+  ),
+  $sizes
+);
+/*sizes in px see more in _dimensions.scss*/
+$dimensions:(
+      0,
+      35px,
+      50px,
+      100px,
+      165px,
+      285px,
+      320px,
+      565px,
+     //...
+);
+/*borders-width*/
+$borders-width: ();
+/*generates border sizes
+call class
+border-soled-2
+border-dashed-3
+../
+*/
+$borders-width: map-merge(
+  (
+        0: 0,
+        1: 1px,
+        2: 2px,
+        3: 3px,
+        4: 4px,
+  ),
+  $borders-width
+);
+
+$border-radius-xs:    2px;
+$border-radius-sm:    6px;
+$border-radius:       10px;
+$border-radius-m:     14px;
+$border-radius-md:    16px;
+$border-radius-lg:    18px;
+$border-radius-xl:    30px;
+/*fonts*/
+$font-family-base: 'Helvetica Neue LT GEO 55 Roman';
+$font-family-base-caps: 'Helvetica Neue LT GEO 55 Roman Caps';
+
+$font-family-medium: 'Helvetica Neue LT GEO 65 Medium';
+$font-family-medium-caps: 'Helvetica Neue LT GEO 65 Medium Caps';
+
+$font-family-bold: 'Helvetica Neue LT GEO 75 Bold';
+$font-family-bold-caps: 'Helvetica Neue LT GEO 75 Bold Caps';
+
+$font-family-lari: 'Lari';
+
+/*Font Size*/
+$font-10: 10px;
+$font-11: 11px;
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 14px;
+$font-15: 15px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-28: 28px;
+$font-30: 30px;
+$font-32: 32px;
+$font-40: 40px;
+$font-50: 50px;
+
+$font-size: () !default;
+$font-size: map-merge(
+  (
+        10: $font-10,
+        11: $font-11,
+        12: $font-12,
+        13: $font-13,
+        14: $font-14,
+        15: $font-15,
+        16: $font-16,
+        18: $font-18,
+        22: $font-22,
+        24: $font-24,
+        28: $font-28,
+        30: $font-30,
+        32: $font-32,
+        40: $font-40,
+        50: $font-50,
+  ),
+  $font-size
+);
+
+/*$dappearence none*/
+.appearance-none {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+}
+/*$drop-shadow*/
+$drop-shadow: 0 30px 60px #0000000F;
+$header-shadow: 0 2px 12px 0 rgba(24, 26, 38, 0.05), inset 0 -1px 0 0 #f7f7f7;
+/*Hover opacity variables*/
+
+/*$transition-fill*/
+$transition-time : .15s;
+$transition-time-slow : .5s;
+$transition-fill:  fill $transition-time ease-in-out;
+/*$transition-bg-fill*/
+$transition-bg:  background $transition-time ease-in-out;
+/*$transition-all*/
+$transition-all:  all $transition-time ease-in-out;
+$transition-all-slow:  all $transition-time-slow ease-in-out;
+/*default transitions*/
+$border-color-transition: border .15s ease-in-out;
+$text-color-transition: color .15s ease-in-out;
+/*Header*/
+
+/*$content-min-heights*/
+$content-min-heights: (
+        sm: 390px,
+        md: 390px,
+        m: 390px,
+        lg: 390px,
+        xl: 390px
+);
+/*grid-breakpoints*/
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        m: 1024px,
+        lg: 1280px,
+        xl: 1600px
+);
+$grid-breakpoints-rev: (
+        xs: 576px,
+        sm: 768px,
+        md: 1024px,
+        m: 1280px,
+        lg: 1600px,
+);
+/*$container-max-widths*/
+$container-max-widths: (
+        //sm: 100%,
+        //md: 100%,
+        //m: 100%,
+        lg: 1200px,
+        xl: 1440px
+);
+/*$container-max-widths*/
+$wide-container-max-widths: (
+        sm: 100%,
+        md: 100%,
+        m: 100%,
+        lg: 100%,
+        xl: 1600px
+);
+/*$small-container-max-widths*/
+$small-container-max-widths: (
+        sm: 100%,
+        md: 100%,
+        m: 100%,
+        lg: 100%,
+        xl: 1200px
+);
+/*$overflows*/
+$overflows: (
+        auto,
+        initial,
+        hidden,
+        scroll,
+);
+
+/*z-index*/
+$z-index: (
+        -1,
+        0,
+        1,
+        2,
+        3,
+        5,
+        9,
+        98,
+        99,
+        999,
+        1051,
+);
+
+
+//old variables
+
+
+/*Forms Variable overrides*/
+$custom-control-label-color: $dark;
+$input-border-color: $gray-0;
+$custom-control-indicator-border-color: $gray-0;
+$custom-control-disabled-opacity: 0.5;
+//custom radio buttons
+//$custom-radio-indicator-border-radius: 50%;
+
+$custom-control-indicator-border-width: 2px;
+$custom-control-indicator-checked-bg: $primary;
+$custom-control-indicator-border: $gray;
+$custom-control-indicator-checked-border: $green-800;
+$custom-control-indicator-frame-size:       20px;
+$custom-control-indicator-frame-size-sm:    16px;
+$custom-radio-border-radius: 50%;
+$custom-radio-indicator-holder-size: 14px;
+$custom-radio-checkbox-indicator-holder-size: $custom-control-indicator-frame-size - 1;
+$custom-radio-indicator-icon-checked:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='#{$white}'/></svg>") !default;
+//checkbox
+$custom-checkbox-indicator-border-radius: 4px;
+$custom-control-indicator-size: 1.1rem;
+$custom-control-indicator-size-sm: .75rem;
+//custom switch
+//switch--large
+$custom-switch-large-width: 42px;
+$custom-switch-large-height: 24px;
+$custom-switch-large-holder-size: 16px;
+$custom-switch-large-holder-spaces: 4px;
+$custom-switch-large-border-radius: 12px;
+//switch--currency
+$custom-switch-currency-width: 68px;
+$custom-switch-currency-height: 38px;
+$custom-switch-currency-holder-size: 30px;
+$custom-switch-currency-holder-spaces: 4px;
+$custom-switch-currency-border-radius: 19px;
+//switch--confirm
+$custom-switch-confirm-width: 43px;
+$custom-switch-confirm-height: 25px;
+$custom-switch-confirm-holder-size: 25px;
+$custom-switch-confirm-holder-spaces: -1px;
+$custom-switch-confirm-border-radius: 12.5px;
+$custom-switch-confirm-holder-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               0;
+$modal-close-icon:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='#C7C7CC' d='M3.287.469l.127.117L6 3.17 8.586.586c.78-.781 2.047-.781 2.828 0 .74.74.78 1.915.117 2.701l-.117.127L8.83 6l2.585 2.586c.781.78.781 2.047 0 2.828-.74.74-1.915.78-2.701.117l-.127-.117L6 8.83l-2.586 2.585c-.78.781-2.047.781-2.828 0-.74-.74-.78-1.915-.117-2.701l.117-.127L3.17 6 .586 3.414c-.781-.78-.781-2.047 0-2.828.74-.74 1.915-.78 2.701-.117z'/></svg>") !default;
+
+$modal-header-padding:              20px 20px !important;
+//$modal-content-border-color:        transparent;
+//$modal-content-border-width:        0;
+
+$modal-xl:                          1140px;
+$modal-lg:                          840px;
+$modal-md:                          625px;
+$modal-sm:                          494px;
+
+
+// Tooltips
+
+$tooltip-font-size:                 $font-12;
+$tooltip-max-width:                 220px;
+$tooltip-bg:                        $gray-800;
+$tooltip-border-radius:             $border-radius;
+$tooltip-opacity:                   1;
+$tooltip-padding-y:                 16px;
+$tooltip-padding-x:                 16px;
+$tooltip-margin:                    5px 0;
+
+$tooltip-arrow-width:               20px;
+$tooltip-arrow-height:              6px;

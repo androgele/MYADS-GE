@@ -1,0 +1,3 @@
+@each $color, $value in $gradient-colors {
+  @include gradients-variant(".gradient-#{$color}", $value, $white);
+}

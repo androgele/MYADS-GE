@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Helvetica Neue LT GEO 75 Bold';
+  src: url('helvetica-neue-lt-geo-75-bold-caps.eot');
+  src: url('helvetica-neue-lt-geo-75-bold-caps.eot?#iefix')
+      format('embedded-opentype'),
+    url('helvetica-neue-lt-geo-75-bold-caps.woff2') format('woff2'),
+    url('helvetica-neue-lt-geo-75-bold-caps.woff') format('woff'),
+    url('helvetica-neue-lt-geo-75-bold-caps.ttf') format('truetype'),
+    url('helvetica-neue-lt-geo-75-bold-caps.svg#helvetica-neue-lt-geo-75-bold-caps')
+      format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

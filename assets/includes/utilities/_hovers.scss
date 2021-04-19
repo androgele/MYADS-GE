@@ -1,0 +1,12 @@
+.fade-out {
+  opacity: 0;
+  @include transition($transition-fade);
+}
+.fade-in {
+  opacity: 1;
+  @include transition($transition-fade);
+}
+
+.transition-all {
+  transition: $transition-all;
+}

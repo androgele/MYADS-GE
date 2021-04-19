@@ -1,0 +1,26 @@
+
+@each $name,$value in $theme-colors {
+  .icon-#{$name} {
+    svg {
+      rect{
+        stroke:$value;
+      }
+      circle,
+      .path,
+      path {
+        fill:$value !important;
+      }
+    }
+  }
+  .stroke-#{$name} {
+    svg {
+      rect{
+        stroke:$value;
+      }
+      .path,
+      path {
+        stroke:$value !important;
+      }
+    }
+  }
+}
