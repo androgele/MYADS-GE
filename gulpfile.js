@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    nunjucksRender = require('gulp-nunjucks-render');
 
 //////////////////////////////////////////////////////////////
 // sass
@@ -31,6 +32,20 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('assets/css'))
 });
 
+
+//////////////////////////////////////////////////////////////
+// compile html
+//////////////////////////////////////////////////////////////
+gulp.task('html', function() {
+    return gulp
+    .src('./views/*.html')
+        .pipe(nunjucksRender({
+            path: './views'
+        }))
+        .pipe(rename({ suffix: '.dist' }))
+        .pipe(gulp.dest('./dist/'))
+});
+
 //////////////////////////////////////////////////////////////
 // watcher
 //////////////////////////////////////////////////////////////
@@ -38,4 +53,5 @@ gulp.task('watch', function() {
     //sass
     gulp.watch('assets/**/*.scss', gulp.series('sass'));
     gulp.watch('assets/css/index.css', gulp.series('minify-css'));
+    gulp.watch('views/**/*.html', gulp.series('html'));
 });
