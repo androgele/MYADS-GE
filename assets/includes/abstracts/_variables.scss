@@ -1,6 +1,7 @@
 $gray-900: #272a37;
 $gray-800: #181a26;
 $gray-700: #454857;
+$gray-600: #f8f9fd;
 $gray-500: #d9dfee;
 $gray-400: #a4aec1;
 $gray-300: #e4e7ed;
@@ -9,6 +10,7 @@ $gray-100: #f8f9fc;
 $gray-0: #dadada;
 $gray: #ababaf;
 //
+$primary-gray:#454b57;
 $green: #0d9933;
 $green-800: #29b24e;
 $green-700: #92d9a4;
@@ -53,10 +55,13 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
     (
         'body': $bg,
+        'primary-gray': $primary-gray,
         'green-800': $green-800,
         'gray-100' : $gray-100,
         'gray-200' : $gray-200,
         'gray-500' : $gray-500,
+        'gray-600' : $gray-600,
+        'gray-700' : $gray-700,
         'gray-800' : $gray-800,
         'gray-900' : $gray-900,
         'black'    : $black,
@@ -158,6 +163,7 @@ $dimensions:(
       165px,
       285px,
       320px,
+      425px,
       565px,
      //...
 );

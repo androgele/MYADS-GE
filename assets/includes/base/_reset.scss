@@ -2,6 +2,10 @@ button {
   outline: 0 !important;
   padding: 0;
 }
+li{
+  list-style-type: none;
+  outline:unset;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;

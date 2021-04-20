@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="">
+
 <head>
     <link rel="stylesheet" href="/assets/css/index.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body>
@@ -12,7 +14,7 @@
     <header class="container-fluid bg-white py-15px">
         <div class="d-flex justify-content-between align-items-center container">
             <div>
-                <a href="#">
+                <a href="/dist/main-page.dist.html">
                     <img src="../images/logo.svg" alt="logo">
                 </a>
             </div>
@@ -23,14 +25,105 @@
                 <div class="mr-60px font-size-14"><a class="text-gray-900  font-bold font-weight-bold" href="">ბანერების
                         კატალოგი</a>
                 </div>
-                <div class="font-size-14"><a class="text-gray-900 font-base" href="">ავტორიზაცია</a></div>
+                <div class="font-size-14"><a class="text-gray-900 font-medium py-6px px-20px bg-gray-600 rounded-md" href="">ავტორიზაცია</a></div>
             </div>
         </div>
     </header>
 
     <main class="container mt-60px">
         
-<span>1235124</span>
+<div class="align-items-center text-center">
+    <img src="../images/myauto.svg" alt="auto-logo">
+    <h2 class="font-size-14 mt-20px font-base text-gray-900">ბანერის ფასები მოცემულია 1 თვიან განთავსებაზე,
+        დღგ-ისჩათვლით.
+        ანიმაციური ბანერის ფორმატი შეიძლება იყოს gif ან html5, ხოლო სტატიკური ბანერი jpg ან png. ფაილის მაქსიმალური
+        დასაშვები ზომა - 80 კილობაიტი.</h2>
+</div>
+<div class="mt-60px">
+    <div id="tabs">
+        <ul
+            class="d-flex align-items-center justify-content-between rounded-sm border border-gray-500 w-425px bg-white m-auto">
+            <li class="py-15px px-30px bg-white rounded-sm"><a class="font-size-16 text-gray-700 font-medium"
+                    href="#desktop-tab">ეკრანი</a></li>
+            <li class="py-15px px-30px bg-white rounded-sm"><a class="font-size-16 text-gray-700 font-medium"
+                    href="#mobile-tab">მობილური</a></li>
+            <li class="py-15px px-30px bg-white rounded-sm"><a class="font-size-16 text-gray-700 font-medium"
+                    href="#app-tab">აპლიკაცია</a></li>
+        </ul>
+        <div class="mt-60px">
+            <div class="d-flex w-100 px-30px pb-20px">
+                <div class="w-25 text-left text-primary-gray font-size-16 font-medium">პოზიცია და ზომა</div>
+                <div class="w-25 pl-25px text-left text-primary-gray font-size-16 font-medium ">ფასი</div>
+                <div class="w-25 text-left text-primary-gray font-size-16 font-medium">ჩვენება</div>
+            </div>
+            <div id="desktop-tab">
+                <div id="accordion">
+                    <div class="w-100 h-100px px-30px py-25px d-flex  border rounded-md bg-white outline-none">
+
+                        <div class="h-100 w-25 justify-content-center d-flex align-items-start flex-column">
+                            <div class="border-right w-100">
+                                <p class="text-primary-gray font-size-16 font-medium">Top Banner</p>
+                                <p class="text-primary-gray font-size-14 font-base">1050x110</p>
+                            </div>
+                        </div>
+
+                        <div class="h-100 w-25 pl-25px justify-content-center d-flex align-items-start flex-column">
+                            <div class="border-right w-100">
+                                <p class="text-primary-gray font-size-16 font-medium">4,000₾</p>
+                                <p class="text-primary-gray font-size-14 font-base">ჩვენება</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        video galera
+                    </div>
+
+
+
+                    <div>
+                        <p>
+                            section 2
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="mobile-tab">
+                <p>მობილური ეკრანი</p>
+            </div>
+
+
+
+            <div id="app-tab">
+                <p>აპლიკაციის ეკრანი</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $("li").on("click", function (event) {
+        if ($(this).hasClass("ui-tabs-active")) {
+            $(this).addClass('active-li');
+        }
+        $("li").not('.ui-tabs-active')
+            .removeClass('active-li');
+    });
+
+    // Jquery Ui Tabs
+    $(function () {
+        $("#tabs").tabs();
+    });
+
+    // Jquery Ui Accordion
+    $(function () {
+        $("#accordion").accordion();
+    });
+</script>
 
     </main>
 
@@ -70,10 +163,11 @@
                 <a href="#" class="text-black font-size-14 font-base">Shop</a>
             </div>
             <div>
-                  <a href="" class="text-black font-size-14 font-base">ქართული (GE)</a>
+                <a href="" class="text-black font-size-14 font-base">ქართული (GE)</a>
             </div>
         </div>
 
     </footer>
 </body>
+
 </html>

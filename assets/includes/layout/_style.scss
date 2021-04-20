@@ -1,5 +1,4 @@
 .container{
-    min-width:1170px;
     max-width:1170px;
   }
   a{
@@ -7,6 +6,16 @@
     &:hover{
       text-decoration: unset;
     }
+  }
+  #tabs{
+    .active-li{
+      border:2px solid #10357f !important; 
+      border-radius:0 !important;
+      a{
+        font-size:18px !important;
+      }
+    }
+ 
   }
   .instagram::after, .facebook::after {
     content: "•";
