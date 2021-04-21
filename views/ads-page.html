@@ -11,7 +11,7 @@
     <div id="tabs">
         <ul
             class="d-flex align-items-center justify-content-between rounded-sm border border-gray-500 w-425px bg-white m-auto">
-            <li class="py-15px px-30px bg-white rounded-sm"><a class="font-size-16 text-gray-700 font-medium"
+            <li class="py-15px px-30px bg-white rounded-sm active-li"><a class="font-size-16 text-gray-700 font-medium"
                     href="#desktop-tab">ეკრანი</a></li>
             <li class="py-15px px-30px bg-white rounded-sm"><a class="font-size-16 text-gray-700 font-medium"
                     href="#mobile-tab">მობილური</a></li>
@@ -19,16 +19,16 @@
                     href="#app-tab">აპლიკაცია</a></li>
         </ul>
         <div class="mt-60px">
-            <div class="d-flex w-100 px-30px pb-20px">
-                <div class="w-25 text-left text-primary-gray font-size-16 font-medium">პოზიცია და ზომა</div>
+            <div class="d-flex w-100 pb-20px">
+                <div class="w-25 pl-30px text-left text-primary-gray font-size-16 font-medium">პოზიცია და ზომა</div>
                 <div class="w-25 pl-25px text-left text-primary-gray font-size-16 font-medium ">ფასი</div>
-                <div class="w-25 text-left text-primary-gray font-size-16 font-medium">ჩვენება</div>
+                <div class="w-25 pl-25px text-left text-primary-gray font-size-16 font-medium">ჩვენება</div>
             </div>
             <div id="desktop-tab">
-                <div id="accordion">
-                    <div class="w-100 h-100px px-30px py-25px d-flex  border rounded-md bg-white outline-none">
-
-                        <div class="h-100 w-25 justify-content-center d-flex align-items-start flex-column">
+                <div id="accordion" class="mb-20px box-shadow-lg  border rounded-md overflow-hidden">
+                    <div
+                        class="w-100 py-25px d-flex flex-wrap justify-content-center align-items-center bg-white outline-none">
+                        <div class="h-100 w-25 justify-content-center d-flex align-items-start flex-column pl-30px">
                             <div class="border-right w-100">
                                 <p class="text-primary-gray font-size-16 font-medium">Top Banner</p>
                                 <p class="text-primary-gray font-size-14 font-base">1050x110</p>
@@ -42,38 +42,98 @@
                             </div>
                         </div>
 
+                        <div class="h-100 w-25 pl-25px justify-content-center d-flex align-items-start flex-column">
+                            <div class="border-right w-100">
+                                <p class="text-primary-gray font-size-16 font-medium">3,000,000</p>
+                                <p class="text-primary-gray font-size-14 font-base">ჩვენება</p>
+                            </div>
+                        </div>
 
-                    </div>
-                    <div>
-                        video galera
-                    </div>
+                        <div class="h-100 w-25 justify-content-center d-flex flex-column align-items-start ads-review">
+                            <div class="w-100 d-flex justify-content-center cursor-pointer">
+                                <img src="../images/subtract.svg" alt="">
+                                <p class="text-primary-gray font-size-16 font-medium pl-10px">პოზიციის ნახვა</p>
+                            </div>
+                        </div>
+
+
+                        <div id="subtabs" class="w-100 ads-content mt-20px">
+                            <div class="h-565px border border-gray-500 bg-gray-300" id="main-page">
+
+
+                            </div>
+                            <div class="h-565px border border-gray-500 bg-gray-300" id="search-page">ძებნის გვერდი</div>
+                            <div class="h-565px border border-gray-500 bg-gray-300" id="product-page">პროდუქტის გვერდი
+                            </div>
+
+                            <div class="px-30px pt-20px d-flex justify-content-between align-items-center">
+                                <ul
+                                    class="d-flex align-items-center justify-content-between rounded-sm border border-gray-500 bg-white">
+                                    <li class="py-15px px-30px bg-white rounded-sm active-li"><a
+                                            class="font-size-16 text-gray-700 font-base" href="#main-page">მთავარი
+                                            გვერდი</a></li>
+                                    <li class="py-15px px-30px bg-white rounded-sm"><a
+                                            class="font-size-16 text-gray-700 font-base" href="#search-page">ძებნის
+                                            გვერდი</a></li>
+                                    <li class="py-15px px-30px bg-white rounded-sm"><a
+                                            class="font-size-16 text-gray-700 font-base" href="#product-page">პროდუქტის
+                                            გვერდი</a></li>
+                                </ul>
+
+                                <span class="font-size-24 font-medium">320X100</span>
+                            </div>
+                        </div>
 
 
 
-                    <div>
-                        <p>
-                            section 2
-                        </p>
+
                     </div>
                 </div>
+
+
+
+
             </div>
 
 
 
             <div id="mobile-tab">
-                <p>მობილური ეკრანი</p>
+                <p>მობილურის ტაბი</p>
             </div>
 
 
 
-            <div id="app-tab">
-                <p>აპლიკაციის ეკრანი</p>
+            <div id="app-tab" class="d-flex flex-column">
+               <!-- <div class="slider-for w-565px h-565px bg-white d-flex w-100 justify-content-between">
+                 <img src="../images/auto-cover.png" alt="">
+                  <img src="../images/jobs-cover.png" alt="">
+                   <img src="../images/home-cover.png" alt="">
+               </div>
+               <div class="slider-nav">
+                   <div class="w-100px h-50px bg-white"></div>
+                   <div class="w-100px h-50px bg-white"></div>
+                   <div class="w-100px h-50px bg-white"></div>
+               </div> -->
             </div>
         </div>
     </div>
 </div>
 <script>
-
+//   $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true
+// });
     $("li").on("click", function (event) {
         if ($(this).hasClass("ui-tabs-active")) {
             $(this).addClass('active-li');
@@ -85,11 +145,21 @@
     // Jquery Ui Tabs
     $(function () {
         $("#tabs").tabs();
+        $("#subtabs").tabs();
     });
 
-    // Jquery Ui Accordion
-    $(function () {
-        $("#accordion").accordion();
+
+    $('#accordion .ads-content').hide();
+    $('#accordion .ads-review').click(function (e) {
+
+        e.preventDefault();
+        // hide all content
+        var $this = $(this).parent().find('.ads-content');
+        $("#accordion .ads-content").not($this).hide();
+
+        // here is what I want to do
+        $this.toggle();
+
     });
 </script>
 {% endblock %}
