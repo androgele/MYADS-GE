@@ -1,5 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
+
+
+<!-- logo and text area -->
 <div class="align-items-center text-center">
     <img src="../images/myauto.svg" alt="auto-logo">
     <h2 class="font-size-14 mt-20px font-base text-gray-900">ბანერის ფასები მოცემულია 1 თვიან განთავსებაზე,
@@ -7,8 +10,12 @@
         ანიმაციური ბანერის ფორმატი შეიძლება იყოს gif ან html5, ხოლო სტატიკური ბანერი jpg ან png. ფაილის მაქსიმალური
         დასაშვები ზომა - 80 კილობაიტი.</h2>
 </div>
+
 <div class="mt-60px">
+
     <div id="tabs">
+
+        <!-- Top Side Tabs -->
         <ul
             class="d-flex align-items-center justify-content-between rounded-sm border border-gray-500 w-425px bg-white m-auto">
             <li class="py-15px px-30px bg-white rounded-sm active-li"><a class="font-size-16 text-gray-700 font-medium"
@@ -18,7 +25,11 @@
             <li class="py-15px px-30px bg-white rounded-sm"><a class="font-size-16 text-gray-700 font-medium"
                     href="#app-tab">აპლიკაცია</a></li>
         </ul>
+
+
         <div class="mt-60px">
+
+            <!-- ads review area -->
             <div class="d-flex w-100 pb-20px">
                 <div class="w-25 pl-30px text-left text-primary-gray font-size-16 font-medium">პოზიცია და ზომა</div>
                 <div class="w-25 pl-25px text-left text-primary-gray font-size-16 font-medium ">ფასი</div>
@@ -58,9 +69,30 @@
 
 
                         <div id="subtabs" class="w-100 ads-content mt-20px">
-                            <div class="h-565px border border-gray-500 bg-gray-200" id="main-page">
-                                მთავარი გვერდი
+
+
+
+
+                            <div class="h-565px border border-gray-500 bg-gray-200 position-relative overflow-hidden" id="main-page">
+
+
+                            <div class="h-3000px bg-white w-320px m-auto overflow-hidden">
+
+                         <div id="main-draggable" class="bg-gray-300 w-100 h-120px my-60px">
+
+                             </div>
+
+                            </div>
+                                <div class="w-120px h-100 bg-white position-absolute top-0 right-0">
+                                    <div id="draggable" class="ui-widget-content w-120px h-165px bg-gray-300">
+                                        <p>Drag me around</p>
+                                    </div>
                                 </div>
+
+                            </div>
+
+
+
                             <div class="h-565px border border-gray-500 bg-gray-200" id="search-page">
                                 ძებნის გვერდი</div>
                             <div class="h-565px border border-gray-500 bg-gray-200" id="product-page">
@@ -113,6 +145,24 @@
 </div>
 <script>
 
+
+$('#draggable').click(function(){
+        var top = parseInt($('#draggable').css('top'));
+        var stop = parseInt($('#main-draggable').css('top'));
+        var second = $('#draggable').height();
+        var first = $('#main-draggable').height();
+        $('#main-draggable').css('top', top + 'px');
+    });
+
+
+    $(function () {
+        $("#draggable").draggable({
+            containment: "parent"
+        });
+        $("#main-draggable").draggable({
+            containment: "parent"
+        });
+    });
     $("li").on("click", function (event) {
         if ($(this).hasClass("ui-tabs-active")) {
             $(this).addClass('active-li');
