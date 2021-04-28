@@ -68,6 +68,7 @@ $theme-colors: map-merge(
         'gray-800' : $gray-800,
         'gray-900' : $gray-900,
         'black'    : $black,
+        'white'    : $white,
         'black-95' : $black-95,
         //...
     ),
@@ -166,6 +167,8 @@ $dimensions:(
       90px,
       100px,
       120px,
+      140px,
+      150px,
       165px,
       245px,
       250px,

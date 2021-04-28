@@ -1,19 +1,26 @@
 .container{
     max-width:1170px;
   }
+  footer a:hover{
+    text-decoration: underline;
+  }
   a{
     text-decoration: unset;
     &:hover{
       text-decoration: unset;
     }
   }
+  a.button:hover{
+    background-color: $black !important;
+    p{
+      color:$white !important;
+    }
+  }
   #tabs{
     .active-li{
       border:2px solid #10357f !important; 
       border-radius:0 !important;
-      a{
-        font-size:18px !important;
-      }
+      background-color: $white;
     }
   }
   .instagram::after, .facebook::after {
